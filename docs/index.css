@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+
+:root {
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --font-family: 'Outfit', sans-serif;
+    --font-weight: 700;
+    --font-size: 1.5rem;
+}
+
+* {
+    font-family: var(--font-family) !important;
+}
+
+body {
+    background-color: var(--Light-grayish-cyan);
+}
+
+h1 {
+    font-size: var(--font-size);
+    color: var(--Very-dark-cyan);
+    font-size: var(--font-size);
+    letter-spacing: 10pt;
+}
+
+.calc-container {
+    padding: 1.5rem;
+    background-color: var(--White);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+label {
+    color: var(--Dark-grayish-cyan);
+    word-spacing: 5pt;
+}
+
+input {
+    text-align: end;
+    caret-color: var(--Strongcyan);
+    background-color: var(--Very-light-grayish-cyan) !important;
+    border: .130rem solid var(--White) !important;
+    transition: all .25s ease-in-out !important;
+}
+
+input:focus {
+    border: .130rem solid var(--Strongcyan) !important;
+    box-shadow: none !important;
+}
+
+.calc-input>div {
+    position: relative;
+}
+
+.calc-input>div>img {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+.tipSelection>div.container>div.row>div>span {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    transition: all .25s ease-in-out !important;
+}
+
+.tipSelection>div.container>div.row>div>span:hover {
+    cursor: pointer;
+    color: var(--grayish-cyan);
+    background-color: var(--Light-grayish-cyan);
+}
+
+.tipSelection>div.container>div.row>div>span.active {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Strongcyan);
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    text-align: center;
+}
+
+.calc-resault-container {
+    position: relative;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--Very-dark-cyan);
+}
+
+.calc-resault-container>div>div>div>p:nth-child(1) {
+    color: var(--White);
+    font-size: calc(var(--font-size) * .6);
+    word-spacing: 5pt;
+}
+
+.calc-resault-container>div>div>div>p:nth-child(2) {
+    color: var(--Grayish-cyan);
+    font-size: calc(var(--font-size) * .5);
+    word-spacing: 5pt;
+}
+
+.calc-resault-container>div>div>div:nth-child(2) {
+    max-width: 70%;
+}
+
+.calc-resault-container>div>div>div:nth-child(2)>p {
+    color: var(--Strongcyan);
+    font-size: calc(var(--font-size) * 2);
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.calc-resault-container>div>div>div:nth-child(2)>p::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.calc-resault-container>div>div>div:nth-child(2)>p {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.reset {
+    padding: .5rem 0;
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    background-color: var(--Strongcyan);
+    transition: all .25s ease-in-out;
+
+}
+
+.reset:hover {
+    cursor: pointer;
+    color: var(--Very-dark-cyan);
+    background-color: var(--White);
+}

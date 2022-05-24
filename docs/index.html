@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col-md-8">
+                <h1 class="text-center my-5">SPLI <br /> TTER</h1>
+                <div class="row calc-container rounded-4">
+                    <!-- Start calc-input -->
+                    <div class="calc-input col-md-6">
+                        <div class="mb-3">
+                            <label for="billAmmount" class="form-label">Bill</label>
+                            <img src="./img/icon-dollar.svg" alt="dollar">
+                            <input type="number" class="form-control billAmmount" id="billAmmount" value="0">
+                        </div>
+                        <div class="tipSelection mb-3">
+                            <label class="form-label">Select Tip %</label>
+                            <div class="container">
+                                <div class="row row-cols-2 row-cols-lg-3">
+                                    <div><span class="tipOption rounded-1 mt-3" value="5">5%</span></div>
+                                    <div><span class="tipOption rounded-1 mt-3" value="10">10%</span></div>
+                                    <div><span class="tipOption rounded-1 mt-3" value="15">15%</span></div>
+                                    <div><span class="tipOption rounded-1 mt-3" value="25">25%</span></div>
+                                    <div><span class="tipOption rounded-1 mt-3" value="50">50%</span></div>
+                                    <div>
+                                        <input type="number"
+                                            class="form-control rounded-1 mt-3 tipOptionEdit billAmmount" value=""
+                                            placeholder="Custome">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="peopleNumber" class="form-label">Number of People</label>
+                            <img src="./img/icon-person.svg" alt="person">
+                            <input type="number" class="form-control peopleNumber" id="peopleNumber" value="1" min="1">
+                        </div>
+                    </div>
+                    <!-- End calc-input -->
+
+                    <!-- Start resault-input -->
+                    <div class="calc-resault col-md-6">
+                        <div
+                            class="calc-resault-container d-flex justify-content-between align-items-center flex-column rounded-4">
+                            <div class="w-100">
+                                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                                    <div class="w-100">
+                                        <p class="mb-0">Tip Amount</p>
+                                        <p class="mx-1">/ Person</p>
+                                    </div>
+                                    <div>
+                                        <p id="personTip">
+                                            $ 0
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                                    <div class="w-100">
+                                        <p class="mb-0">Total</p>
+                                        <p class="mx-1">/ Person</p>
+                                    </div>
+                                    <div>
+                                        <p id="total">
+                                            $ 0
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="reset" class="reset w-100 rounded-2">
+                                RESET
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End resault-input -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
