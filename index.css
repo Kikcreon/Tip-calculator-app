@@ -8,7 +8,7 @@
     --Light-grayish-cyan: hsl(185, 41%, 84%);
     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
-    --font-family: 'Outfit', sans-serif;
+    --font-family: 'Outfit';
     --font-weight: 700;
     --font-size: 1.5rem;
 }
